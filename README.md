@@ -10,10 +10,40 @@ feature parity; see [DESIGN.md](DESIGN.md) for scope, decisions and phases.
 watched rip inbox that the Mac app does not have yet. Packaged as a Flatpak
 (phase 11).
 
+https://github.com/user-attachments/assets/f07879b6-b7ea-4486-b0b4-9b674328bb8e
+
+*An Esoteric SACD (ESSJ-90329): the ISO is extracted to DSF, identified from
+the disc's own catalog number, fingerprints and Discogs, and tagged with
+ReplayGain and the cover.*
+
+## What it does
+
+- **SACD ISOs** are extracted to DSF (DST decoded, stereo and multichannel
+  areas), **CD images** with a CUE sheet are split into verified FLAC
+  tracks and checked against CUETools DB; folders of tracks are tagged in
+  place.
+- **Identification** finds the exact edition from the rip itself: existing
+  tags, disc IDs, the SACD's master TOC, barcodes and catalog numbers read
+  from the scans (zxing-cpp, PaddleOCR), AcoustID fingerprints and cover
+  comparison, across MusicBrainz and Discogs.
+- **Tags** are previewed field by field with locks, written Picard-style
+  with ReplayGain 2.0 and cover art; originals are backed up and can be
+  restored, and albums can be moved into a library layout.
+- **The whole queue** can run unattended: sure matches are finished, the
+  rest are set aside for review, releases already in the library are
+  flagged.
+- **A rip folder** can be watched in the background: finished rips are
+  tagged locally and moved into the library with verified copies.
+
+API keys for AcoustID and Discogs (both free) are entered in Preferences →
+Providers; many Japanese and SACD editions are only on Discogs.
+
 ## Installing
 
 Download the bundle for your architecture (`drtagger-<version>-x86_64.flatpak`
-or `-aarch64.flatpak`) and install it; the GNOME runtime comes from Flathub:
+or `-aarch64.flatpak`) from a release, or from the artifacts of the latest
+[Flatpak workflow run](https://github.com/prietus/drtagger-linux/actions/workflows/flatpak.yml),
+and install it; the GNOME runtime comes from Flathub:
 
 ```sh
 flatpak install --user drtagger-0.1.0-x86_64.flatpak
