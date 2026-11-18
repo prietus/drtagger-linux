@@ -1,0 +1,21 @@
+[package]
+name = "sacdkit"
+description = "Scarletbook (SACD ISO) reader and DSF extractor (port of SACDKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+dstkit.workspace = true
+librarykit.workspace = true
+flackit.workspace = true
+splitkit.workspace = true
+serde.workspace = true
+encoding_rs.workspace = true
+rayon.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

@@ -1,0 +1,148 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $DrtaggerWindow: Adw.ApplicationWindow {
+  title: _("drtagger");
+  width-request: 360;
+  height-request: 294;
+
+  Adw.Breakpoint {
+    condition ("max-width: 640sp")
+
+    setters {
+      split_view.collapsed: true;
+    }
+  }
+
+  content: Adw.ToastOverlay toasts {
+    child: Adw.NavigationSplitView split_view {
+      min-sidebar-width: 280;
+      max-sidebar-width: 520;
+      sidebar-width-fraction: 0.3;
+
+      sidebar: Adw.NavigationPage {
+        title: _("Queue");
+
+        child: Adw.ToolbarView sidebar_view {
+          [top]
+          Adw.HeaderBar {
+            [start]
+            MenuButton {
+              icon-name: "list-add-symbolic";
+              tooltip-text: _("Add folders or image files to the queue");
+              menu-model: add_menu;
+            }
+
+            [end]
+            MenuButton {
+              primary: true;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Main Menu");
+              menu-model: primary_menu;
+            }
+          }
+        };
+      };
+
+      content: Adw.NavigationPage content_page {
+        title: _("Album");
+
+        child: Adw.ToolbarView content_view {
+          [top]
+          Adw.HeaderBar {
+            show-title: false;
+
+            [start]
+            Button process_button {
+              icon-name: "media-playback-start-symbolic";
+              tooltip-text: _("Identify and tag every album in the queue; unsure ones are set aside for review");
+              action-name: "win.process-queue";
+            }
+
+            [start]
+            Button stop_button {
+              icon-name: "media-playback-stop-symbolic";
+              tooltip-text: _("Finish the albums in progress and stop; the rest stay pending");
+              action-name: "win.stop-batch";
+              visible: false;
+            }
+
+            [start]
+            ToggleButton overview_button {
+              icon-name: "view-list-bullet-symbolic";
+              tooltip-text: _("Every album of the batch in a table, with the release chosen and what happened");
+              action-name: "win.batch-overview";
+              visible: false;
+            }
+
+            [end]
+            Button {
+              icon-name: "user-trash-symbolic";
+              tooltip-text: _("Empty the queue (files on disk are never touched)");
+              action-name: "win.clear-queue";
+            }
+
+            [end]
+            Button {
+              icon-name: "list-remove-symbolic";
+              tooltip-text: _("Remove the selected album from the queue");
+              action-name: "win.remove-selected";
+            }
+
+            [end]
+            Button {
+              icon-name: "view-refresh-symbolic";
+              tooltip-text: _("Scan the selected album's folder again");
+              action-name: "win.rescan";
+            }
+          }
+        };
+      };
+    };
+  };
+}
+
+menu add_menu {
+  section {
+    item {
+      label: _("Add _Folders…");
+      action: "win.add-folders";
+    }
+
+    item {
+      label: _("Add _Image Files…");
+      action: "win.add-files";
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Process Queue…");
+      action: "win.process-queue";
+    }
+
+    item {
+      label: _("_Clear Queue");
+      action: "win.clear-queue";
+    }
+  }
+
+  section {
+    item {
+      label: _("_Preferences");
+      action: "app.preferences";
+    }
+
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "app.shortcuts";
+    }
+
+    item {
+      label: _("_About drtagger");
+      action: "app.about";
+    }
+  }
+}

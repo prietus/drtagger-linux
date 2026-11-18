@@ -1,0 +1,77 @@
+[workspace]
+resolver = "3"
+members = ["app", "crates/*"]
+default-members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+rust-version = "1.90"
+repository = "https://github.com/prietus/drtagger-linux"
+
+[workspace.dependencies]
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time", "process", "fs", "io-util"] }
+oo7 = { version = "0.7", default-features = false, features = ["tokio", "native_crypto"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+regex = "1"
+fancy-regex = "0.20"
+encoding_rs = "0.8"
+sha1 = "0.11"
+base64 = "0.23"
+icu_collator = "2"
+icu_locale_core = "2"
+unicode-normalization = "0.1"
+rusqlite = { version = "0.43", features = ["bundled"] }
+tempfile = "3"
+sha2 = "0.11"
+imagesize = "0.15"
+hex = "0.4"
+# Pre-generated bindings for the ICU major in RUST_ICU_MAJOR_VERSION_NUMBER
+# (scripts/vm.sh and the Flatpak manifest set it): no bindgen, so no
+# libclang is needed (the GNOME SDK has none).
+rust_icu_utrans = { version = "5.8", default-features = false, features = ["renaming", "icu_version_in_env"] }
+rust_icu_ustring = { version = "5.8", default-features = false, features = ["renaming", "icu_version_in_env"] }
+rust_icu_sys = { version = "5.8", default-features = false, features = ["renaming", "icu_version_in_env"] }
+crc32fast = "1"
+rayon = "1"
+libc = "0.2"
+md-5 = "0.11"
+trash = "5"
+unicode-properties = "0.1"
+unicode-segmentation = "1"
+gtk = { package = "gtk4", version = "0.11", features = ["gnome_50"] }
+adw = { package = "libadwaita", version = "0.9", features = ["v1_9"] }
+glib-build-tools = "0.22"
+
+drtagger-core = { path = "crates/drtagger-core" }
+librarykit = { path = "crates/librarykit" }
+flackit = { path = "crates/flackit" }
+tagkit = { path = "crates/tagkit" }
+splitkit = { path = "crates/splitkit" }
+dstkit = { path = "crates/dstkit" }
+sacdkit = { path = "crates/sacdkit" }
+loudnesskit = { path = "crates/loudnesskit" }
+chromaprintkit = { path = "crates/chromaprintkit" }
+providerkit = { path = "crates/providerkit" }
+identifykit = { path = "crates/identifykit" }
+visionkit = { path = "crates/visionkit" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+
+# DST decoding and loudness are hot loops; keep them usable in debug builds.
+[profile.dev.package.dstkit]
+opt-level = 3
+[profile.dev.package.loudnesskit]
+opt-level = 3
+[profile.dev.package.chromaprintkit]
+opt-level = 3
+[profile.dev.package.visionkit]
+opt-level = 3

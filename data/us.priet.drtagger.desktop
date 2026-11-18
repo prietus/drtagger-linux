@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=drtagger
+Comment=Identify, split and tag audiophile rips
+Exec=drtagger %F
+Icon=us.priet.drtagger
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;
+Keywords=tag;tagger;musicbrainz;sacd;flac;dsf;cue;replaygain;
+StartupNotify=true
+DBusActivatable=false

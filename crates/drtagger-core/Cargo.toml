@@ -1,0 +1,34 @@
+[package]
+name = "drtagger-core"
+description = "Application services shared by the GTK app and the CLI: paths, keys, store, queue and batch state"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+anyhow.workspace = true
+tokio.workspace = true
+oo7.workspace = true
+librarykit.workspace = true
+rusqlite.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+splitkit.workspace = true
+sacdkit.workspace = true
+flackit.workspace = true
+tagkit.workspace = true
+gettext-rs = { version = "0.8", features = ["gettext-system"] }
+loudnesskit.workspace = true
+trash.workspace = true
+identifykit.workspace = true
+visionkit.workspace = true
+providerkit.workspace = true
+regex.workspace = true
+libc.workspace = true
+ashpd = { version = "0.14", default-features = false, features = ["tokio", "trash"] }
+
+[dev-dependencies]
+tempfile.workspace = true

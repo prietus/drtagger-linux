@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Prefix = the application's resource base path, so AdwApplication picks
+     up style.css, shortcuts-dialog.ui (app.shortcuts) and icons/ on its own. -->
+<gresources>
+  <gresource prefix="/us/priet/drtagger/">
+    <file preprocess="xml-stripblanks">ui/window.ui</file>
+    <file preprocess="xml-stripblanks">ui/preferences.ui</file>
+    <file preprocess="xml-stripblanks" alias="shortcuts-dialog.ui">ui/shortcuts-dialog.ui</file>
+    <file>style.css</file>
+    <file alias="icons/256x256/apps/us.priet.drtagger.png">../../data/icons/hicolor/256x256/apps/us.priet.drtagger.png</file>
+  </gresource>
+</gresources>

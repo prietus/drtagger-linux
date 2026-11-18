@@ -1,0 +1,57 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.ShortcutsDialog shortcuts_dialog {
+  Adw.ShortcutsSection {
+    title: _("Queue");
+
+    Adw.ShortcutsItem {
+      title: _("Add Folders…");
+      action-name: "win.add-folders";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Filter albums");
+      action-name: "win.find";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Rescan");
+      action-name: "win.rescan";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Identify");
+      action-name: "win.identify";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Remove from Queue");
+      accelerator: "Delete";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Clear Queue");
+      action-name: "win.clear-queue";
+    }
+  }
+
+  Adw.ShortcutsSection {
+    title: _("General");
+
+    Adw.ShortcutsItem {
+      title: _("Preferences");
+      action-name: "app.preferences";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Keyboard Shortcuts");
+      action-name: "app.shortcuts";
+    }
+
+    Adw.ShortcutsItem {
+      title: _("Quit");
+      action-name: "app.quit";
+    }
+  }
+}

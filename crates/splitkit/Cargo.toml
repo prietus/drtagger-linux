@@ -1,0 +1,25 @@
+[package]
+name = "splitkit"
+description = "Image splitting through ffmpeg with verification, CUETools DB CRCs and path templates (port of SplitKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+flackit.workspace = true
+librarykit.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+regex.workspace = true
+crc32fast.workspace = true
+libc.workspace = true
+md-5.workspace = true
+tempfile.workspace = true
+rust_icu_utrans.workspace = true
+rust_icu_ustring.workspace = true
+rust_icu_sys.workspace = true
+unicode-properties.workspace = true
+unicode-segmentation.workspace = true

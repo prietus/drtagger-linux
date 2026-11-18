@@ -1,0 +1,16 @@
+[package]
+name = "loudnesskit"
+description = "ITU-R BS.1770-4 / EBU R128 loudness and ReplayGain (port of LoudnessKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+splitkit.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

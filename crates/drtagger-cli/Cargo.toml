@@ -1,0 +1,32 @@
+[package]
+name = "drtagger-cli"
+description = "Headless drtagger: the Mac app's launch arguments as subcommands, used by scripts and tests"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[[bin]]
+name = "drtagger-cli"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+drtagger-core.workspace = true
+librarykit.workspace = true
+serde_json.workspace = true
+tagkit.workspace = true
+splitkit.workspace = true
+sacdkit.workspace = true
+loudnesskit.workspace = true
+identifykit.workspace = true
+visionkit.workspace = true
+providerkit.workspace = true
+chromaprintkit.workspace = true
+flackit.workspace = true
+sha2.workspace = true
+hex.workspace = true
+tempfile.workspace = true

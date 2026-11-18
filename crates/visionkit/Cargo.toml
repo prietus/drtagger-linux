@@ -1,0 +1,20 @@
+[package]
+name = "visionkit"
+description = "Barcodes, OCR and cover similarity for artwork scans (replaces Apple Vision)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+identifykit = { workspace = true }
+providerkit = { workspace = true }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "gif", "bmp", "tiff", "webp"] }
+imageproc = { version = "0.27", default-features = false }
+# zxing-cpp's C++ sources, built with CMake and linked statically.
+zxing-cpp = { version = "0.5.3", features = ["bundled"] }
+# ONNX Runtime, linked from pyke's prebuilt static binaries.
+ort = { version = "=2.0.0-rc.15", default-features = false, features = ["std", "download-binaries", "tls-rustls", "api-24"] }
+

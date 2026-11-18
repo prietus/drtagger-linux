@@ -1,0 +1,1913 @@
+# drtagger for GNOME.
+# Copyright (C) Carlos Prieto Ortiz
+# This file is distributed under the same license as the drtagger package.
+msgid ""
+msgstr ""
+"Project-Id-Version: drtagger\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: crates/drtagger-core/src/batch.rs:903
+msgid " + cover"
+msgstr " + portada"
+
+#: app/src/sections/disc.rs:376
+#, rust-format
+msgid " · {} pause frames dropped"
+msgstr " · {} tramas de pausa descartadas"
+
+#: app/src/sections/release_set.rs:168
+msgid "(this)"
+msgstr "(este)"
+
+#: app/src/sections/tags.rs:54
+#, rust-format
+msgid ", cover embedded in {}"
+msgstr ", portada incrustada en {}"
+
+#: app/src/sections/tags.rs:201
+msgid ", full size saved as cover file"
+msgstr ", a tamaño completo guardada como fichero de portada"
+
+#: app/src/sections/tags.rs:56
+msgid ". Use Refresh to preview again."
+msgstr ". Usa Actualizar para previsualizar de nuevo."
+
+#: app/src/sidebar.rs:513
+msgid "1 album"
+msgstr "1 álbum"
+
+#: app/src/sidebar.rs:53
+msgid "1 track"
+msgstr "1 pista"
+
+#: crates/drtagger-core/src/batch.rs:926
+msgid "; moved into the library"
+msgstr "; movido a la biblioteca"
+
+#: app/resources/ui/preferences.blp:44
+msgid "ASCII-Only File Names"
+msgstr "Nombres de fichero solo ASCII"
+
+#: app/src/batch.rs:321
+#, rust-format
+msgid "About {} left"
+msgstr "Quedan unos {}"
+
+#: app/resources/ui/preferences.blp:172
+msgid "AcoustID (Acoustic Fingerprints)"
+msgstr "AcoustID (huellas acústicas)"
+
+#: app/src/sections/identification.rs:169
+msgid "AcoustID off"
+msgstr "AcoustID desactivado"
+
+#: app/src/window.rs:401
+msgid "Add"
+msgstr "Añadir"
+
+#: app/src/sidebar.rs:373
+#: app/resources/ui/shortcuts-dialog.blp:9
+msgid "Add Folders…"
+msgstr "Añadir carpetas…"
+
+#: app/resources/ui/window.blp:108
+msgid "Add _Folders…"
+msgstr "Añadir _carpetas…"
+
+#: app/resources/ui/window.blp:113
+msgid "Add _Image Files…"
+msgstr "Añadir ficheros de _imagen…"
+
+#: app/resources/ui/window.blp:32
+msgid "Add folders or image files to the queue"
+msgstr "Añadir carpetas o imágenes a la cola"
+
+#: app/src/inspector.rs:37
+msgid "Add folders with SACD ISOs, CD images or album tracks to get started."
+msgstr "Añade carpetas con ISOs de SACD, imágenes de CD o pistas de álbumes para empezar."
+
+#: app/resources/ui/preferences.blp:267
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: app/src/batch.rs:893
+#: app/src/window.rs:156
+#: app/resources/ui/window.blp:48
+msgid "Album"
+msgstr "Álbum"
+
+#: app/resources/ui/preferences.blp:27
+msgid "Album Folder"
+msgstr "Carpeta del álbum"
+
+#: app/src/sections/tags.rs:294
+msgid "Album fields"
+msgstr "Campos del álbum"
+
+#: crates/drtagger-core/src/batch.rs:906
+msgid "Album only, no edition: "
+msgstr "Álbum, sin edición: "
+
+#: app/src/inspector.rs:229
+msgid "Album set"
+msgstr "Álbum"
+
+#: app/src/batch.rs:485
+msgid "Albums whose files name a different release than the one found, and releases already elsewhere in the library, are always set aside for you."
+msgstr "Los álbumes cuyos ficheros indican una release distinta a la encontrada, y las releases que ya están en otro sitio de la biblioteca, siempre se apartan para ti."
+
+#: app/src/batch.rs:230
+msgid "All"
+msgstr "Todos"
+
+#: app/src/release_images.rs:365
+#, rust-format
+msgid "All {} photos"
+msgstr "Las {} fotos"
+
+#: app/src/sections/disc.rs:126
+#, rust-format
+msgid "All {} tracks match a known rip (confidence {})"
+msgstr "Las {0} pistas coinciden con un rip conocido (confianza {1})"
+
+#: crates/drtagger-core/src/batch.rs:880
+#, rust-format
+msgid "Already in the library: {}"
+msgstr "Ya está en la biblioteca: {}"
+
+#: app/src/sections/workflow.rs:218
+#: crates/drtagger-core/src/batch.rs:896
+msgid "Already tagged with this release"
+msgstr "Ya tagueado con esta release"
+
+#: crates/drtagger-core/src/batch.rs:915
+msgid "Already tagged with this release; nothing written"
+msgstr "Ya tagueado con esta release; no se ha escrito nada"
+
+#: app/resources/ui/preferences.blp:175
+msgid "Application API Key"
+msgstr "Clave API de la aplicación"
+
+#: app/src/sections/tags.rs:120
+#: app/src/sections/workflow.rs:82
+#: app/src/sections/workflow.rs:90
+msgid "Apply"
+msgstr "Aplicar"
+
+#: scripts/update-po.py
+msgid "Applying"
+msgstr "Aplicando"
+
+#: app/src/inspector.rs:375
+#, rust-format
+msgid "Artwork ({})"
+msgstr "Portadas ({})"
+
+#: app/resources/ui/preferences.blp:127
+msgid "Artwork and Tags"
+msgstr "Carátulas y tags"
+
+#: app/src/actions.rs:138
+#: app/src/actions.rs:190
+msgid "Asking CUETools DB…"
+msgstr "Consultando CUETools DB…"
+
+#: app/resources/ui/preferences.blp:115
+msgid "Audio Between Tracks"
+msgstr "Audio entre pistas"
+
+#: app/src/inspector.rs:282
+msgid "Barcode"
+msgstr "Código de barras"
+
+#: app/src/batch.rs:982
+msgid "Batch"
+msgstr "Lote"
+
+#: app/src/batch.rs:982
+msgid "Batch preview"
+msgstr "Prueba del lote"
+
+#: scripts/update-po.py
+msgid "CD image + CUE"
+msgstr "Imagen de CD + CUE"
+
+#: app/resources/ui/preferences.blp:302
+msgid "CDDB Server for Rippers"
+msgstr "Servidor CDDB para rippers"
+
+#: app/src/sections/disc.rs:111
+#, rust-format
+msgid "CUE says {}"
+msgstr "El CUE dice {}"
+
+#: app/src/batch.rs:491
+#: app/src/window.rs:426
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: app/src/inspector.rs:283
+msgid "Catalog #"
+msgstr "Nº de catálogo"
+
+#: app/src/inspector.rs:223
+msgid "Catalog number"
+msgstr "Número de catálogo"
+
+#: app/src/sections/disc.rs:160
+#: app/resources/ui/preferences.blp:280
+msgid "Check"
+msgstr "Comprobar"
+
+#: app/src/preferences.rs:389
+msgid "Checking…"
+msgstr "Comprobando…"
+
+#: app/src/window.rs:399
+msgid "Choose SACD ISOs or CD images"
+msgstr "Elige ISOs de SACD o imágenes de CD"
+
+#: app/src/release_images.rs:158
+msgid "Choose This Release"
+msgstr "Elegir esta release"
+
+#: crates/drtagger-core/src/batch.rs:646
+msgid "Choose a library folder in Settings first."
+msgstr "Elige primero una carpeta de biblioteca en Preferencias."
+
+#: app/src/sections/tags.rs:91
+msgid "Choose a release above to preview its tags"
+msgstr "Elige una release arriba para previsualizar sus tags"
+
+#: app/src/sections/workflow.rs:195
+msgid "Choose a release in Identification below."
+msgstr "Elige una release en Identificación, más abajo."
+
+#: crates/drtagger-core/src/tagging.rs:311
+msgid "Choose a release in Identification first."
+msgstr "Elige primero una release en Identificación."
+
+#: app/resources/ui/preferences.blp:291
+msgid "Choose an ffmpeg executable"
+msgstr "Elige un ejecutable de ffmpeg"
+
+#: app/src/preferences.rs:437
+msgid "Choose an ffmpeg executable."
+msgstr "Elige un ejecutable de ffmpeg."
+
+#: app/src/window.rs:397
+msgid "Choose folders with SACD ISOs, CD images + CUE, or album tracks."
+msgstr "Elige carpetas con ISOs de SACD, imágenes de CD + CUE o pistas de álbumes."
+
+#: app/src/sections/disc.rs:329
+msgid "Choose the library folder where extracted tracks are written."
+msgstr "Elige la carpeta de biblioteca donde se escriben las pistas extraídas."
+
+#: app/src/preferences.rs:197
+msgid "Choose the library folder where split tracks are written"
+msgstr "Elige la carpeta de la biblioteca donde se escriben las pistas partidas"
+
+#: app/src/sections/disc.rs:246
+msgid "Choose the library folder where split tracks are written."
+msgstr "Elige la carpeta de biblioteca donde se escriben las pistas partidas."
+
+#: app/src/sections/release_set.rs:200
+msgid "Choose the library folder where the discs are written."
+msgstr "Elige la carpeta de biblioteca donde se escriben los discos."
+
+#: app/src/actions.rs:258
+msgid "Choose the library folder where the tracks are written."
+msgstr "Elige la carpeta de biblioteca donde se escriben las pistas."
+
+#: app/src/batch.rs:539
+msgid "Choose the library folder."
+msgstr "Elige la carpeta de la biblioteca."
+
+#: app/src/preferences.rs:244
+msgid "Choose the local folder your ripper writes into"
+msgstr "Elige la carpeta local donde escribe tu ripeador"
+
+#: app/src/sections/identification.rs:292
+msgid "Choose this release"
+msgstr "Elegir esta release"
+
+#: app/src/batch.rs:474
+#: app/resources/ui/preferences.blp:21
+#: app/resources/ui/preferences.blp:75
+msgid "Choose…"
+msgstr "Elegir…"
+
+#: app/src/release_images.rs:158
+msgid "Chosen"
+msgstr "Elegida"
+
+#: app/src/sidebar.rs:476
+msgid "Clear"
+msgstr "Limpiar"
+
+#: app/src/window.rs:426
+#: app/resources/ui/shortcuts-dialog.blp:34
+msgid "Clear Queue"
+msgstr "Vaciar cola"
+
+#: app/src/sections/identification.rs:292
+msgid "Clear the choice"
+msgstr "Quitar la elección"
+
+#: app/src/release_images.rs:259
+msgid "Click the pressing that matches your disc. Obis are shown when a photo of one exists."
+msgstr "Pulsa el prensaje que coincide con tu disco. Se muestra el OBI cuando hay foto de él."
+
+#: app/src/inspector.rs:126
+#: app/src/sections/tags.rs:167
+msgid "Click to view larger"
+msgstr "Pulsa para ver en grande"
+
+#: app/src/batch.rs:405
+msgid "Close Batch"
+msgstr "Cerrar el lote"
+
+#: app/src/sections/identification.rs:103
+msgid "Compare Covers"
+msgstr "Comparar portadas"
+
+#: app/src/release_images.rs:258
+msgid "Compare covers"
+msgstr "Comparar portadas"
+
+#: crates/drtagger-core/src/tagging.rs:472
+msgid "Comparing covers…"
+msgstr "Comparando portadas…"
+
+#: app/src/sections/identification.rs:54
+#: scripts/update-po.py
+msgid "Confident match"
+msgstr "Coincidencia segura"
+
+#: crates/drtagger-core/src/tagging.rs:687
+#: crates/drtagger-core/src/tagging.rs:748
+#, rust-format
+msgid "Could not move files into the library: {}"
+msgstr "No se pudieron mover los ficheros a la biblioteca: {}"
+
+#: crates/drtagger-core/src/batch.rs:839
+msgid "Could not produce the track files"
+msgstr "No se pudieron generar los ficheros de pista"
+
+#: app/src/release_images.rs:184
+msgid "Cover Art Archive has none; add a Discogs token in Preferences to see Discogs photos, where obis usually are."
+msgstr "Cover Art Archive no tiene ninguna; añade un token de Discogs en Preferencias para ver las fotos de Discogs, donde suelen estar los obis."
+
+#: app/src/sections/tags.rs:191
+msgid "Cover embedding is off in Preferences"
+msgstr "La portada incrustada está desactivada en Preferencias"
+
+#: crates/drtagger-core/src/batch.rs:774
+msgid "DSD files, but no SACD edition is known; the candidates are CDs"
+msgstr "Ficheros DSD, pero no se conoce ninguna edición SACD; las candidatas son CD"
+
+#: app/src/sections/disc.rs:371
+#, rust-format
+msgid "DSF · {} s · {} lead-in frames skipped"
+msgstr "DSF · {} s · {} tramas iniciales omitidas"
+
+#: app/src/sections/disc.rs:340
+msgid "DST-compressed, decoded losslessly"
+msgstr "Comprimido en DST, decodificado sin pérdidas"
+
+#: app/src/inspector.rs:279
+msgid "Date"
+msgstr "Fecha"
+
+#: scripts/update-po.py
+msgid "Decoding…"
+msgstr "Decodificando…"
+
+#: app/src/batch.rs:459
+msgid "Destination"
+msgstr "Destino"
+
+#: app/resources/ui/preferences.blp:15
+msgid "Destination Folder"
+msgstr "Carpeta de destino"
+
+#: app/src/inspector.rs:192
+msgid "Details"
+msgstr "Detalles"
+
+#: app/src/sections/disc.rs:91
+#: app/src/sections/release_set.rs:141
+msgid "Disc"
+msgstr "Disco"
+
+#: app/src/inspector.rs:220
+msgid "Disc artist"
+msgstr "Artista del disco"
+
+#: app/src/inspector.rs:226
+msgid "Disc date"
+msgstr "Fecha del disco"
+
+#: app/src/sections/disc.rs:95
+msgid "Disc layout not read yet."
+msgstr "La estructura del disco aún no se ha leído."
+
+#: app/src/sections/disc.rs:155
+msgid "Disc not in the database"
+msgstr "Disco no presente en la base de datos"
+
+#: app/src/inspector.rs:217
+msgid "Disc title"
+msgstr "Título del disco"
+
+#: app/src/inspector.rs:262
+#: app/src/sections/release_set.rs:102
+#, rust-format
+msgid "Disc {}"
+msgstr "Disco {}"
+
+#: crates/drtagger-core/src/tagging.rs:155
+#, rust-format
+msgid "Disc {} is still being extracted or split; wait for it to finish."
+msgstr "El disco {} todavía se está extrayendo o partiendo; espera a que termine."
+
+#: app/src/inspector.rs:229
+#, rust-format
+msgid "Disc {} of {}"
+msgstr "Disco {0} de {1}"
+
+#: app/src/sidebar.rs:203
+#, rust-format
+msgid "Disc {}/{}"
+msgstr "Disco {0}/{1}"
+
+#: app/src/sections/common.rs:25
+#, rust-format
+msgid "Disc {}: "
+msgstr "Disco {}: "
+
+#: crates/drtagger-core/src/tagging.rs:361
+#, rust-format
+msgid "Disc {}: the release has only {} disc(s); its files are left untouched."
+msgstr "Disco {0}: la release solo tiene {1} disco(s); sus ficheros no se tocan."
+
+#: crates/drtagger-core/src/tagging.rs:366
+#, rust-format
+msgid "Disc {}: the release lists {} tracks, the files are {}; tags are mapped by position."
+msgstr "Disco {0}: la release tiene {1} pistas y los ficheros {2}; los tags se asignan por posición."
+
+#: app/resources/ui/preferences.blp:203
+msgid "Discogs (Credits, Editions, Catalog Numbers)"
+msgstr "Discogs (créditos, ediciones, números de catálogo)"
+
+#: app/src/sections/identification.rs:172
+msgid "Discogs (no hits)"
+msgstr "Discogs (sin resultados)"
+
+#: app/src/sections/identification.rs:190
+msgid "Discogs is not set up: many editions (Japanese reissues, SACDs) are only there. Add a token in Settings → Providers."
+msgstr "Discogs no está configurado: muchas ediciones (reediciones japonesas, SACD) solo están allí. Añade un token en Preferencias → Proveedores."
+
+#: app/src/sections/identification.rs:177
+msgid "Discogs off"
+msgstr "Discogs desactivado"
+
+#: app/src/inspector.rs:203
+msgid "Discs"
+msgstr "Discos"
+
+#: crates/drtagger-core/src/tagging.rs:376
+#, rust-format
+msgid "Discs not present: {} of {}."
+msgstr "Discos que faltan: {0} de {1}."
+
+#: app/src/batch.rs:678
+#: app/src/sections/workflow.rs:282
+#: scripts/update-po.py
+msgid "Done"
+msgstr "Hecho"
+
+#: app/src/batch.rs:233
+#, rust-format
+msgid "Done {}"
+msgstr "Hechos {}"
+
+#: app/src/actions.rs:312
+msgid "Downloading artwork…"
+msgstr "Descargando portada…"
+
+#: app/resources/ui/preferences.blp:120
+msgid "Drop (Like sacd_extract)"
+msgstr "Descartar (como sacd_extract)"
+
+#: app/src/sidebar.rs:369
+msgid "Drop folders here, or use Add Folders… (Ctrl+O)."
+msgstr "Suelta carpetas aquí o usa Añadir carpetas… (Ctrl+O)."
+
+#: app/resources/ui/preferences.blp:131
+msgid "Embed Front Cover"
+msgstr "Incrustar la portada"
+
+#: app/resources/ui/preferences.blp:135
+msgid "Embedded Cover Size"
+msgstr "Tamaño de la portada incrustada"
+
+#: app/src/sections/tags.rs:199
+#, rust-format
+msgid "Embedded at {} px max"
+msgstr "Incrustada a {} px como máximo"
+
+#: app/src/sidebar.rs:479
+msgid "Empty the queue"
+msgstr "Vaciar la cola"
+
+#: app/resources/ui/window.blp:81
+msgid "Empty the queue (files on disk are never touched)"
+msgstr "Vaciar la cola (los ficheros en disco no se tocan)"
+
+#: app/resources/ui/preferences.blp:305
+msgid "Enable CDDB Server"
+msgstr "Activar el servidor CDDB"
+
+#: app/src/preferences.rs:335
+msgid "Enter a key to test it"
+msgstr "Introduce una clave para probarla"
+
+#: app/src/batch.rs:680
+#: scripts/update-po.py
+msgid "Error"
+msgstr "Error"
+
+#: app/src/batch.rs:344
+msgid "Errors"
+msgstr "Errores"
+
+#: app/src/batch.rs:232
+#, rust-format
+msgid "Errors {}"
+msgstr "Errores {}"
+
+#: app/src/batch.rs:450
+msgid "Every album is identified; those with a sure match get their files, tags, cover and ReplayGain without asking. The rest are set aside for you to review, and the batch keeps going."
+msgstr "Se identifican todos los álbumes; los que tienen coincidencia segura reciben ficheros, tags, portada y ReplayGain sin preguntar. El resto se aparta para que lo revises, y el lote sigue."
+
+#: app/resources/ui/window.blp:73
+msgid "Every album of the batch in a table, with the release chosen and what happened"
+msgstr "Todos los álbumes del lote en una tabla, con la release elegida y lo que pasó"
+
+#: app/src/sections/tags.rs:207
+msgid "Existing pictures are kept"
+msgstr "Se conservan las imágenes existentes"
+
+#: app/src/batch.rs:942
+#: app/src/batch.rs:1004
+msgid "Export Report…"
+msgstr "Exportar informe…"
+
+#: app/src/sections/disc.rs:411
+#: app/src/sections/workflow.rs:59
+msgid "Extract"
+msgstr "Extraer"
+
+#: app/src/sections/workflow.rs:236
+msgid "Extract & Identify"
+msgstr "Extraer e identificar"
+
+#: app/src/sections/workflow.rs:256
+msgid "Extract & Preview Tags"
+msgstr "Extraer y previsualizar tags"
+
+#: app/src/sections/disc.rs:321
+msgid "Extract Again…"
+msgstr "Extraer de nuevo…"
+
+#: app/src/sections/release_set.rs:78
+msgid "Extract All Discs…"
+msgstr "Extraer todos los discos…"
+
+#: app/resources/ui/preferences.blp:110
+msgid "Extract Multichannel Area"
+msgstr "Extraer el área multicanal"
+
+#: app/src/sections/workflow.rs:156
+msgid "Extract or split, write tags, cover and ReplayGain, and file the album in the library"
+msgstr "Extrae o parte, escribe tags, portada y ReplayGain, y coloca el álbum en la biblioteca"
+
+#: app/src/sections/workflow.rs:238
+msgid "Extract the DSF tracks, then identify the release with their acoustic fingerprints"
+msgstr "Extrae las pistas DSF y luego identifica la release con sus huellas acústicas"
+
+#: crates/drtagger-core/src/tagging.rs:165
+msgid "Extract the SACD first; the DSF tracks receive the tags."
+msgstr "Extrae primero el SACD; los tags se escriben en las pistas DSF."
+
+#: app/src/sections/workflow.rs:187
+msgid "Extract the disc first: its fingerprints identify the exact edition."
+msgstr "Extrae primero el disco: sus huellas identifican la edición exacta."
+
+#: app/src/sections/disc.rs:321
+msgid "Extract to Library…"
+msgstr "Extraer a la biblioteca…"
+
+#: crates/drtagger-core/src/batch.rs:559
+msgid "Extracting"
+msgstr "Extrayendo"
+
+#: crates/drtagger-core/src/batch.rs:622
+#, rust-format
+msgid "Extracting {}"
+msgstr "Extrayendo {}"
+
+#: crates/drtagger-core/src/batch.rs:630
+msgid "Extraction failed"
+msgstr "La extracción falló"
+
+#: app/src/sections/disc.rs:310
+msgid "Extraction finished with problems"
+msgstr "La extracción terminó con problemas"
+
+#: crates/drtagger-core/src/tagging.rs:318
+msgid "Fetching release details…"
+msgstr "Descargando los detalles de la release…"
+
+#: app/src/sections/workflow.rs:61
+msgid "Files"
+msgstr "Ficheros"
+
+#: app/src/sidebar.rs:236
+#: app/resources/ui/shortcuts-dialog.blp:14
+msgid "Filter albums"
+msgstr "Filtrar álbumes"
+
+#: app/src/sections/workflow.rs:190
+msgid "Find the exact release from tags, disc data, scans and fingerprints."
+msgstr "Busca la release exacta a partir de tags, datos del disco, escaneos y huellas."
+
+#: app/resources/ui/window.blp:65
+msgid "Finish the albums in progress and stop; the rest stay pending"
+msgstr "Termina los álbumes en curso y se detiene; el resto queda pendiente"
+
+#: app/resources/ui/preferences.blp:61
+msgid "Finished rips in this local folder are identified, tagged and moved into the library without asking; unsure ones wait in the queue for review."
+msgstr "Los rips terminados en esta carpeta local se identifican, se taguean y se mueven a la biblioteca sin preguntar; los dudosos esperan en la cola para revisarlos."
+
+#: app/src/sections/identification.rs:88
+msgid "Fold away releases whose medium cannot be the source of these files"
+msgstr "Plegar las releases cuyo medio no puede ser el origen de estos ficheros"
+
+#: app/src/batch.rs:406
+msgid "Forget the batch statuses; the albums stay in the queue"
+msgstr "Olvida los estados del lote; los álbumes siguen en la cola"
+
+#: app/src/inspector.rs:206
+msgid "Formats"
+msgstr "Formatos"
+
+#: app/src/sections/disc.rs:115
+msgid "FreeDB ID"
+msgstr "ID de FreeDB"
+
+#: app/resources/ui/preferences.blp:149
+msgid "Full resolution, next to the tracks"
+msgstr "A resolución completa, junto a las pistas"
+
+#: app/src/preferences.rs:409
+msgid "GPL build, development only"
+msgstr "Build GPL, solo para desarrollo"
+
+#: app/resources/ui/preferences.blp:8
+#: app/resources/ui/shortcuts-dialog.blp:40
+msgid "General"
+msgstr "General"
+
+#: app/src/inspector.rs:280
+msgid "Genre"
+msgstr "Género"
+
+#: app/resources/ui/preferences.blp:153
+msgid "Genres From Discogs"
+msgstr "Géneros de Discogs"
+
+#: app/src/sidebar.rs:427
+#, rust-format
+msgid "Group as One Release ({} Discs)"
+msgstr "Agrupar como una release ({} discos)"
+
+#: app/src/sidebar.rs:445
+msgid "Group with Folder Siblings"
+msgstr "Agrupar con los discos hermanos"
+
+#: app/src/sections/release_set.rs:59
+#, rust-format
+msgid "Group with {} sibling(s)"
+msgstr "Agrupar con {} hermano(s)"
+
+#: app/resources/ui/preferences.blp:82
+msgid "How long a rip without a ripper log must stay unchanged"
+msgstr "Cuánto tiempo debe quedarse sin cambios un rip sin log del ripeador"
+
+#: app/src/sections/identification.rs:39
+msgid "Identification"
+msgstr "Identificación"
+
+#: app/src/sections/workflow.rs:79
+#: app/src/sections/workflow.rs:86
+#: app/src/sections/workflow.rs:246
+msgid "Identify"
+msgstr "Identificar"
+
+#: app/src/sections/identification.rs:120
+msgid "Identify Again"
+msgstr "Identificar de nuevo"
+
+#: app/src/sections/workflow.rs:145
+msgid "Identify Again with Fingerprints"
+msgstr "Identificar de nuevo con huellas"
+
+#: app/resources/ui/window.blp:58
+msgid "Identify and tag every album in the queue; unsure ones are set aside for review"
+msgstr "Identifica y taguea todos los álbumes de la cola; los dudosos se apartan para revisar"
+
+#: crates/drtagger-core/src/batch.rs:558
+#: scripts/update-po.py
+msgid "Identifying"
+msgstr "Identificando"
+
+#: crates/drtagger-core/src/batch.rs:227
+#, rust-format
+msgid "Identifying {}"
+msgstr "Identificando {}"
+
+#: crates/drtagger-core/src/batch.rs:228
+#, rust-format
+msgid "Identifying {} albums: {}"
+msgstr "Identificando {0} álbumes: {1}"
+
+#: app/src/sections/workflow.rs:246
+msgid "Identifying…"
+msgstr "Identificando…"
+
+#: app/src/release_images.rs:66
+msgid "Image"
+msgstr "Imagen"
+
+#: app/src/inspector.rs:209
+msgid "Image size"
+msgstr "Tamaño de la imagen"
+
+#: app/src/inspector.rs:254
+#, rust-format
+msgid "Image: {} ({})"
+msgstr "Imagen: {0} ({1})"
+
+#: app/src/batch.rs:455
+msgid "Import to the library: tag, then move into the library layout"
+msgstr "Importar a la biblioteca: taguear y mover a la estructura de la biblioteca"
+
+#: app/src/preferences.rs:457
+#, rust-format
+msgid "In your ripper's freedb/CDDB settings: server localhost, port {}, path /~cddb/cddb.cgi, HTTP. drtagger must be open while you rip. Answers come from MusicBrainz by disc TOC, best-fitting pressing first; CDDB carries artist, album, year and track titles only, so tag the rip in drtagger afterwards for full metadata."
+msgstr "En los ajustes freedb/CDDB de tu ripper: servidor localhost, puerto {}, ruta /~cddb/cddb.cgi, HTTP. drtagger debe estar abierto mientras ripeas. Las respuestas vienen de MusicBrainz por el TOC del disco, primero la edición que mejor encaja; CDDB solo lleva artista, álbum, año y títulos, así que etiqueta el rip en drtagger después para tener todos los metadatos."
+
+#: crates/drtagger-core/src/batch.rs:432
+msgid "Indexing the library…"
+msgstr "Indexando la biblioteca…"
+
+#: crates/drtagger-core/src/batch.rs:436
+#, rust-format
+msgid "Indexing the library… {} folders"
+msgstr "Indexando la biblioteca… {} carpetas"
+
+#: app/resources/ui/preferences.blp:102
+msgid "Keep albums and their identification results between launches"
+msgstr "Conservar los álbumes y su identificación entre arranques"
+
+#: app/src/sections/tags.rs:210
+msgid "Keep existing pictures"
+msgstr "Conservar las imágenes existentes"
+
+#: app/resources/ui/preferences.blp:119
+msgid "Keep in Previous Track"
+msgstr "Mantener en la pista anterior"
+
+#: app/resources/ui/shortcuts-dialog.blp:48
+msgid "Keyboard Shortcuts"
+msgstr "Atajos de teclado"
+
+#: app/src/inspector.rs:201
+msgid "Kind"
+msgstr "Tipo"
+
+#: app/src/batch.rs:610
+msgid "Leave As Is"
+msgstr "Dejar como está"
+
+#: crates/drtagger-core/src/batch.rs:197
+msgid "Left as is"
+msgstr "Dejado como estaba"
+
+#: app/resources/ui/preferences.blp:12
+msgid "Library"
+msgstr "Biblioteca"
+
+#: app/src/sections/identification.rs:56
+msgid "Likely match, please review"
+msgstr "Coincidencia probable, revísala"
+
+#: app/src/state.rs:195
+#, rust-format
+msgid "Listening on 127.0.0.1:{} · {} request(s)"
+msgstr "Escuchando en 127.0.0.1:{0} · {1} petición(es)"
+
+#: app/src/sections/tags.rs:244
+msgid "Lock this field to keep the file's value"
+msgstr "Bloquea este campo para conservar el valor del fichero"
+
+#: app/src/sections/tags.rs:242
+msgid "Locked: the file keeps its value"
+msgstr "Bloqueado: el fichero conserva su valor"
+
+#: app/src/sections/identification.rs:375
+#: app/src/sections/tags.rs:371
+#, rust-format
+msgid "Log ({} lines)"
+msgstr "Registro ({} líneas)"
+
+#: crates/drtagger-core/src/tagging.rs:437
+msgid "Looking for artwork…"
+msgstr "Buscando portada…"
+
+#: crates/drtagger-core/src/tagging.rs:575
+#, rust-format
+msgid "Loudness measurement failed: {}"
+msgstr "La medición de sonoridad ha fallado: {}"
+
+#: app/resources/ui/window.blp:40
+msgid "Main Menu"
+msgstr "Menú principal"
+
+#: app/src/batch.rs:611
+msgid "Mark it done without writing anything"
+msgstr "Lo marca como hecho sin escribir nada"
+
+#: app/src/batch.rs:895
+msgid "Match"
+msgstr "Coincidencia"
+
+#: app/src/sections/disc.rs:109
+msgid "Matches the CUE's REM DISCID"
+msgstr "Coincide con el REM DISCID del CUE"
+
+#: app/resources/ui/preferences.blp:158
+msgid "Measure EBU R128 loudness when the files have none"
+msgstr "Medir la sonoridad EBU R128 cuando los ficheros no la tienen"
+
+#: crates/drtagger-core/src/tagging.rs:556
+#: crates/drtagger-core/src/tagging.rs:560
+msgid "Measuring loudness…"
+msgstr "Midiendo la sonoridad…"
+
+#: app/resources/ui/preferences.blp:50
+msgid "Move files into the library layout using the final tags"
+msgstr "Mover los ficheros a la estructura de la biblioteca con los tags finales"
+
+#: app/src/preferences.rs:282
+msgid "Multi-disc releases get a “Disc N” folder automatically."
+msgstr "Las releases de varios discos tienen automáticamente una carpeta «Disc N»."
+
+#: app/src/sections/disc.rs:363
+#, rust-format
+msgid "Multichannel ({} ch)"
+msgstr "Multicanal ({} can.)"
+
+#: app/src/inspector.rs:232
+msgid "Multichannel area"
+msgstr "Área multicanal"
+
+#: app/src/sections/disc.rs:97
+msgid "MusicBrainz Disc ID"
+msgstr "Disc ID de MusicBrainz"
+
+#: scripts/update-po.py
+msgid "Needs review"
+msgstr "Necesita revisión"
+
+#: app/src/release_images.rs:182
+msgid "Neither Cover Art Archive nor Discogs has images of it."
+msgstr "Ni Cover Art Archive ni Discogs tienen imágenes de ella."
+
+#: app/src/batch.rs:613
+msgid "Next to Review"
+msgstr "Siguiente por revisar"
+
+#: app/src/sections/identification.rs:81
+msgid "No AcoustID key: fingerprints off"
+msgstr "Sin clave de AcoustID: huellas desactivadas"
+
+#: app/src/inspector.rs:36
+msgid "No Album Selected"
+msgstr "Ningún álbum seleccionado"
+
+#: app/src/sections/tags.rs:311
+msgid "No album-level changes"
+msgstr "Sin cambios a nivel de álbum"
+
+#: app/src/sections/tags.rs:311
+msgid "No album-level fields"
+msgstr "Sin campos a nivel de álbum"
+
+#: app/src/sections/tags.rs:205
+msgid "No artwork source found; existing pictures are kept"
+msgstr "No se encontró ninguna fuente de portada; se conservan las imágenes existentes"
+
+#: crates/drtagger-core/src/tagging.rs:310
+#: crates/drtagger-core/src/tagging.rs:314
+msgid "No audio files to tag."
+msgstr "No hay ficheros de audio que taguear."
+
+#: app/src/sections/identification.rs:71
+msgid "No candidates"
+msgstr "Sin candidatos"
+
+#: crates/drtagger-core/src/tagging.rs:412
+msgid "No file could be read."
+msgstr "No se ha podido leer ningún fichero."
+
+#: app/src/sections/identification.rs:181
+msgid "No identifying signals found"
+msgstr "No se encontraron señales de identificación"
+
+#: app/src/batch.rs:515
+msgid "No library folder set"
+msgstr "No hay carpeta de biblioteca"
+
+#: app/src/release_images.rs:180
+msgid "No photos for this release"
+msgstr "No hay fotos de esta release"
+
+#: crates/drtagger-core/src/batch.rs:783
+msgid "No release found"
+msgstr "No se encontró ninguna release"
+
+#: app/src/sections/identification.rs:217
+msgid "No release in a matching format; showing every format."
+msgstr "Ninguna release en un formato compatible; se muestran todos los formatos."
+
+#: app/src/sections/identification.rs:31
+msgid "No release matched. Add API keys in Preferences or check the folder's artwork and tags."
+msgstr "Ninguna release coincide. Añade claves API en Preferencias o revisa las carátulas y los tags de la carpeta."
+
+#: app/src/inspector.rs:69
+msgid "No scan details stored for this album. Use Rescan."
+msgstr "No hay detalles de exploración guardados para este álbum. Usa Volver a explorar."
+
+#: crates/drtagger-core/src/batch.rs:781
+#, rust-format
+msgid "No sure match; best: {}"
+msgstr "Sin coincidencia segura; la mejor: {}"
+
+#: app/src/sections/disc.rs:139
+msgid "No track matches a known rip"
+msgstr "Ninguna pista coincide con un rip conocido"
+
+#: app/src/sections/tags.rs:343
+msgid "No track-specific changes"
+msgstr "Sin cambios específicos de la pista"
+
+#: app/src/sections/disc.rs:303
+msgid "Not extracted yet"
+msgstr "Aún no extraído"
+
+#: app/src/sections/identification.rs:73
+msgid "Not identified yet"
+msgstr "Aún no identificado"
+
+#: app/src/sections/tags.rs:93
+msgid "Not previewed yet"
+msgstr "Aún sin previsualizar"
+
+#: app/src/preferences.rs:185
+#: app/src/preferences.rs:233
+#: app/resources/ui/preferences.blp:16
+msgid "Not set"
+msgstr "Sin configurar"
+
+#: app/src/sections/disc.rs:218
+msgid "Not split yet"
+msgstr "Aún no partido"
+
+#: app/src/batch.rs:896
+msgid "Note"
+msgstr "Nota"
+
+#: app/src/inspector.rs:391
+msgid "Notes"
+msgstr "Notas"
+
+#: app/src/preferences.rs:468
+msgid "Off"
+msgstr "Desactivado"
+
+#: app/src/sections/tags.rs:151
+msgid "On Apply,"
+msgstr "Al aplicar,"
+
+#: app/resources/ui/preferences.blp:55
+msgid "Only after the split has been verified"
+msgstr "Solo después de verificar el partido"
+
+#: app/src/window.rs:422
+msgid "Only the queue is cleared. Nothing is deleted from disk; scan results and identifications for these albums are forgotten."
+msgstr "Solo se vacía la cola. No se borra nada del disco; se olvidan los resultados de exploración e identificación de estos álbumes."
+
+#: app/src/image_viewer.rs:26
+#: app/src/sidebar.rs:441
+#: app/src/sections/workflow.rs:284
+msgid "Open Containing Folder"
+msgstr "Abrir la carpeta contenedora"
+
+#: app/src/sections/disc.rs:49
+msgid "Open Folder"
+msgstr "Abrir carpeta"
+
+#: app/resources/ui/preferences.blp:222
+msgid "Open your Discogs developer settings"
+msgstr "Abre tus ajustes de desarrollador de Discogs"
+
+#: app/resources/ui/preferences.blp:49
+msgid "Organize After Apply"
+msgstr "Organizar después de aplicar"
+
+#: app/src/actions.rs:390
+#: crates/drtagger-core/src/tagging.rs:646
+msgid "Organizing files…"
+msgstr "Organizando ficheros…"
+
+#: app/resources/ui/preferences.blp:286
+msgid "Override Path (Empty Uses the Bundled One)"
+msgstr "Ruta alternativa (vacía usa el incluido)"
+
+#: app/src/sections/disc.rs:343
+msgid "Pauses between tracks are dropped"
+msgstr "Las pausas entre pistas se descartan"
+
+#: app/src/sections/disc.rs:345
+msgid "Pauses between tracks stay with the previous track"
+msgstr "Las pausas entre pistas se quedan con la pista anterior"
+
+#: app/src/batch.rs:682
+#: scripts/update-po.py
+msgid "Pending"
+msgstr "Pendiente"
+
+#: app/src/inspector.rs:277
+msgid "Performer"
+msgstr "Intérprete"
+
+#: app/resources/ui/preferences.blp:207
+msgid "Personal Access Token"
+msgstr "Token de acceso personal"
+
+#: app/src/preferences.rs:280
+msgid "Placeholders:"
+msgstr "Marcadores:"
+
+#: app/src/sections/identification.rs:86
+msgid "Plausible formats only"
+msgstr "Solo formatos plausibles"
+
+#: app/resources/ui/preferences.blp:309
+msgid "Port"
+msgstr "Puerto"
+
+#: app/src/state.rs:186
+#, rust-format
+msgid "Port {} is not available: {}"
+msgstr "El puerto {} no está disponible: {}"
+
+#: app/resources/ui/shortcuts-dialog.blp:43
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: crates/drtagger-core/src/batch.rs:835
+#, rust-format
+msgid "Preparing files for {}"
+msgstr "Preparando los ficheros de {}"
+
+#: app/src/actions.rs:178
+msgid "Preparing…"
+msgstr "Preparando…"
+
+#: app/src/batch.rs:355
+#: app/resources/ui/preferences.blp:35
+msgid "Preview"
+msgstr "Prueba"
+
+#: app/src/sections/tags.rs:109
+#: app/src/sections/workflow.rs:291
+msgid "Preview Tags"
+msgstr "Previsualizar tags"
+
+#: app/src/batch.rs:481
+msgid "Preview run: identify and report what would change, write nothing"
+msgstr "Prueba: identificar e informar de lo que cambiaría, sin escribir nada"
+
+#: app/src/sections/workflow.rs:155
+msgid "Process All"
+msgstr "Procesar todo"
+
+#: app/src/batch.rs:444
+msgid "Process the Queue"
+msgstr "Procesar la cola"
+
+#: app/resources/ui/preferences.blp:238
+msgid "Project API Key"
+msgstr "Clave API del proyecto"
+
+#: app/resources/ui/preferences.blp:164
+msgid "Providers"
+msgstr "Proveedores"
+
+#: app/src/sections/identification.rs:185
+msgid "Providers:"
+msgstr "Proveedores:"
+
+#: app/src/sections/tags.rs:101
+msgid "Put back the metadata every file had before the first Apply"
+msgstr "Restaurar los metadatos que tenía cada fichero antes del primer Aplicar"
+
+#: app/resources/ui/preferences.blp:98
+#: app/resources/ui/shortcuts-dialog.blp:6
+#: app/resources/ui/window.blp:24
+msgid "Queue"
+msgstr "Cola"
+
+#: app/src/sidebar.rs:368
+msgid "Queue is Empty"
+msgstr "La cola está vacía"
+
+#: app/resources/ui/preferences.blp:81
+msgid "Quiet Time (Minutes)"
+msgstr "Tiempo de espera (minutos)"
+
+#: app/resources/ui/shortcuts-dialog.blp:53
+msgid "Quit"
+msgstr "Salir"
+
+#: app/src/sections/disc.rs:160
+msgid "Re-check"
+msgstr "Volver a comprobar"
+
+#: app/src/actions.rs:112
+msgid "Reading disc layout…"
+msgstr "Leyendo la estructura del disco…"
+
+#: app/src/state.rs:475
+msgid "Reading from a network volume…"
+msgstr "Leyendo de un volumen de red…"
+
+#: crates/drtagger-core/src/tagging.rs:316
+#: crates/drtagger-core/src/tagging.rs:322
+msgid "Reading tags…"
+msgstr "Leyendo tags…"
+
+#: scripts/update-po.py
+msgid "Reading the image…"
+msgstr "Leyendo la imagen…"
+
+#: scripts/update-po.py
+msgid "Ready to identify"
+msgstr "Listo para identificar"
+
+#: app/src/sections/tags.rs:109
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: app/resources/ui/preferences.blp:190
+msgid "Register an application at acoustid.org"
+msgstr "Registra una aplicación en acoustid.org"
+
+#: app/src/batch.rs:894
+#: app/src/sections/workflow.rs:80
+#: app/src/sections/workflow.rs:87
+msgid "Release"
+msgstr "Release"
+
+#: app/src/sections/release_set.rs:123
+msgid "Release set"
+msgstr "Conjunto de discos"
+
+#: app/src/sections/identification.rs:98
+#, rust-format
+msgid "Release set · {} discs"
+msgstr "Conjunto · {} discos"
+
+#: app/src/sections/disc.rs:177
+msgid "Releases with this TOC"
+msgstr "Releases con este TOC"
+
+#: app/resources/ui/preferences.blp:101
+msgid "Remember the Queue"
+msgstr "Recordar la cola"
+
+#: app/src/window.rs:421
+msgid "Remove every album from the queue?"
+msgstr "¿Quitar todos los álbumes de la cola?"
+
+#: app/src/sidebar.rs:453
+#: app/resources/ui/shortcuts-dialog.blp:29
+msgid "Remove from Queue"
+msgstr "Quitar de la cola"
+
+#: app/resources/ui/window.blp:88
+msgid "Remove the selected album from the queue"
+msgstr "Quitar de la cola el álbum seleccionado"
+
+#: app/src/sidebar.rs:430
+#, rust-format
+msgid "Remove {} Albums from Queue"
+msgstr "Quitar {} álbumes de la cola"
+
+#: app/resources/ui/preferences.blp:157
+msgid "ReplayGain on Apply"
+msgstr "ReplayGain al aplicar"
+
+#: app/resources/ui/preferences.blp:253
+msgid "Request an API key at fanart.tv"
+msgstr "Solicita una clave de API en fanart.tv"
+
+#: app/src/sidebar.rs:440
+#: app/resources/ui/shortcuts-dialog.blp:19
+msgid "Rescan"
+msgstr "Volver a explorar"
+
+#: app/src/sections/tags.rs:99
+msgid "Restore Originals"
+msgstr "Restaurar originales"
+
+#: app/src/actions.rs:420
+msgid "Restoring original tags…"
+msgstr "Restaurando los tags originales…"
+
+#: app/src/batch.rs:402
+msgid "Resume"
+msgstr "Reanudar"
+
+#: app/src/batch.rs:679
+msgid "Review"
+msgstr "Revisar"
+
+#: app/src/batch.rs:231
+#, rust-format
+msgid "Review {}"
+msgstr "Revisar {}"
+
+#: app/resources/ui/preferences.blp:69
+msgid "Rip Folder"
+msgstr "Carpeta de rips"
+
+#: app/resources/ui/preferences.blp:60
+msgid "Rip Inbox"
+msgstr "Bandeja de rips"
+
+#: app/src/inbox.rs:180
+msgid "Rips processed"
+msgstr "Rips procesados"
+
+#: app/resources/ui/preferences.blp:107
+msgid "SACD"
+msgstr "SACD"
+
+#: scripts/update-po.py
+msgid "SACD ISO"
+msgstr "ISO de SACD"
+
+#: app/src/batch.rs:477
+msgid "SACD images and CD images always get their tracks written to the library folder. Originals are backed up, and every album can be restored afterwards."
+msgstr "Las ISO de SACD y las imágenes de CD siempre escriben sus pistas en la carpeta de la biblioteca. Se guarda copia de los originales, y cada álbum se puede restaurar después."
+
+#: crates/drtagger-core/src/batch.rs:830
+msgid "SACD or CD image: new tracks would have to be written; use Import to extract or split it"
+msgstr "ISO de SACD o imagen de CD: habría que escribir pistas nuevas; usa Importar para extraerla o partirla"
+
+#: app/resources/ui/preferences.blp:148
+msgid "Save cover.jpg"
+msgstr "Guardar cover.jpg"
+
+#: app/resources/ui/window.blp:95
+msgid "Scan the selected album's folder again"
+msgstr "Volver a explorar la carpeta del álbum seleccionado"
+
+#: scripts/update-po.py
+msgid "Scanning"
+msgstr "Explorando"
+
+#: app/src/sidebar.rs:509
+#, rust-format
+msgid "Scanning {}…"
+msgstr "Explorando {}…"
+
+#: app/src/sidebar.rs:509
+msgid "Scanning…"
+msgstr "Explorando…"
+
+#: app/src/sections/identification.rs:302
+msgid "See every photo of this release"
+msgstr "Ver todas las fotos de esta release"
+
+#: app/src/sections/identification.rs:104
+msgid "See the candidates' covers and obis side by side and pick yours"
+msgstr "Ver las portadas y los OBI de los candidatos lado a lado y elegir el tuyo"
+
+#: app/src/batch.rs:598
+msgid "Set aside for review"
+msgstr "Apartado para revisar"
+
+#: app/src/sections/release_set.rs:177
+msgid "Show this disc"
+msgstr "Mostrar este disco"
+
+#: app/src/sections/tags.rs:298
+msgid "Show unchanged"
+msgstr "Mostrar sin cambios"
+
+#: app/src/sections/identification.rs:183
+msgid "Signals:"
+msgstr "Señales:"
+
+#: app/src/inspector.rs:211
+msgid "Source"
+msgstr "Origen"
+
+#: app/src/sections/disc.rs:214
+#: app/src/sections/workflow.rs:60
+msgid "Split"
+msgstr "Partir"
+
+#: app/src/sections/workflow.rs:256
+msgid "Split & Preview Tags"
+msgstr "Partir y previsualizar tags"
+
+#: app/src/sections/disc.rs:238
+msgid "Split Again…"
+msgstr "Partir de nuevo…"
+
+#: app/src/sections/release_set.rs:72
+msgid "Split All Discs…"
+msgstr "Partir todos los discos…"
+
+#: app/src/sections/disc.rs:223
+msgid "Split finished with problems"
+msgstr "La partición terminó con problemas"
+
+#: crates/drtagger-core/src/tagging.rs:181
+msgid "Split the image first; the FLAC tracks receive the tags."
+msgstr "Parte primero la imagen; los tags se escriben en las pistas FLAC."
+
+#: app/src/sections/disc.rs:238
+msgid "Split to Library…"
+msgstr "Partir a la biblioteca…"
+
+#: app/src/batch.rs:521
+msgid "Start"
+msgstr "Empezar"
+
+#: app/src/batch.rs:521
+msgid "Start Preview"
+msgstr "Empezar la prueba"
+
+#: app/resources/ui/preferences.blp:92
+msgid "Start at Login"
+msgstr "Iniciar al entrar en la sesión"
+
+#: app/src/batch.rs:892
+#: app/resources/ui/preferences.blp:275
+#: app/resources/ui/preferences.blp:320
+msgid "Status"
+msgstr "Estado"
+
+#: app/src/sections/disc.rs:365
+msgid "Stereo"
+msgstr "Estéreo"
+
+#: app/src/inspector.rs:232
+msgid "Stereo area"
+msgstr "Área estéreo"
+
+#: app/src/state.rs:495
+#, rust-format
+msgid "Still reading {}… the volume is slow or not responding."
+msgstr "Todavía leyendo {}… el volumen es lento o no responde."
+
+#: app/src/batch.rs:398
+msgid "Stop"
+msgstr "Detener"
+
+#: app/src/batch.rs:398
+msgid "Stopping…"
+msgstr "Deteniendo…"
+
+#: crates/drtagger-core/src/batch.rs:868
+#, rust-format
+msgid "Tagged as another release ({}); drtagger suggests {}"
+msgstr "Tagueado como otra release ({0}); drtagger propone {1}"
+
+#: crates/drtagger-core/src/batch.rs:950
+msgid "Tagged as the album, without an edition"
+msgstr "Tagueado como álbum, sin edición"
+
+#: crates/drtagger-core/src/batch.rs:844
+#, rust-format
+msgid "Tagging {}"
+msgstr "Tagueando {}"
+
+#: app/src/sections/tags.rs:61
+#: app/src/sections/workflow.rs:81
+#: app/src/sections/workflow.rs:89
+msgid "Tags"
+msgstr "Tags"
+
+#: crates/drtagger-core/src/batch.rs:898
+msgid "Tags already match"
+msgstr "Los tags ya coinciden"
+
+#: app/src/sections/tags.rs:77
+msgid "Tags already match the release"
+msgstr "Los tags ya coinciden con la release"
+
+#: crates/drtagger-core/src/batch.rs:917
+msgid "Tags already matched; nothing written"
+msgstr "Los tags ya coincidían; no se ha escrito nada"
+
+#: app/src/sections/tags.rs:87
+#, rust-format
+msgid "Tags written {}"
+msgstr "Tags escritos {}"
+
+#: app/resources/ui/preferences.blp:180
+#: app/resources/ui/preferences.blp:184
+#: app/resources/ui/preferences.blp:212
+msgid "Test"
+msgstr "Probar"
+
+#: app/src/preferences.rs:349
+msgid "Testing…"
+msgstr "Probando…"
+
+#: crates/drtagger-core/src/batch.rs:699
+msgid "The album has no scan details; rescan it."
+msgstr "El álbum no tiene datos de escaneo; vuelve a escanearlo."
+
+#: app/src/state.rs:574
+msgid "The album is no longer detected at this path."
+msgstr "El álbum ya no se detecta en esta ruta."
+
+#: crates/drtagger-core/src/tagging.rs:479
+msgid "The album's cover does not look like this release's: check that it is the same edition."
+msgstr "La portada del álbum no se parece a la de esta release: comprueba que sea la misma edición."
+
+#: app/src/batch.rs:598
+msgid "The batch could not finish this album"
+msgstr "El lote no pudo terminar este álbum"
+
+#: app/resources/ui/preferences.blp:272
+msgid "The bundled ffmpeg is a minimal LGPL build. A distribution's ffmpeg works for development but is often GPL and must not be redistributed with the app."
+msgstr "El ffmpeg incluido es una compilación LGPL mínima. El ffmpeg de una distribución sirve para desarrollar, pero suele ser GPL y no debe redistribuirse con la app."
+
+#: app/src/sections/workflow.rs:146
+msgid "The disc is extracted now, so acoustic fingerprints can confirm the edition"
+msgstr "El disco ya está extraído, así que las huellas acústicas pueden confirmar la edición"
+
+#: app/resources/ui/preferences.blp:128
+msgid "The front cover is embedded resized to this longest side. An existing cover file in the folder is never replaced. Fields taken from the chosen release replace the existing ones; everything else in the files is preserved, and fields can be locked in the preview."
+msgstr "La portada se incrusta redimensionada a este lado mayor. Un fichero de portada que ya exista en la carpeta nunca se sustituye. Los campos de la release elegida sustituyen a los existentes; todo lo demás de los ficheros se conserva, y los campos se pueden bloquear en la previsualización."
+
+#: app/src/image_viewer.rs:41
+msgid "The image could not be read"
+msgstr "No se ha podido leer la imagen"
+
+#: crates/drtagger-core/src/tagging.rs:320
+msgid "The tracklist of this release could not be downloaded; try again or choose another release."
+msgstr "No se ha podido descargar la lista de pistas de esta release; inténtalo de nuevo o elige otra."
+
+#: app/src/sections/release_set.rs:50
+#, rust-format
+msgid "This is disc {} of {}; the other discs are not in the queue"
+msgstr "Este es el disco {0} de {1}; los demás no están en la cola"
+
+#: app/src/inspector.rs:278
+msgid "Title"
+msgstr "Título"
+
+#: app/src/batch.rs:337
+msgid "To review"
+msgstr "Por revisar"
+
+#: app/resources/ui/preferences.blp:31
+msgid "Track File"
+msgstr "Fichero de pista"
+
+#: scripts/update-po.py
+msgid "Track folder"
+msgstr "Carpeta de pistas"
+
+#: app/src/inspector.rs:318
+#, rust-format
+msgid "Track {}"
+msgstr "Pista {}"
+
+#: app/src/inspector.rs:201
+#: app/src/inspector.rs:262
+msgid "Tracks"
+msgstr "Pistas"
+
+#: app/src/sections/tags.rs:350
+#, rust-format
+msgid "Tracks ({})"
+msgstr "Pistas ({})"
+
+#: scripts/update-po.py
+msgid "Tracks + CUE"
+msgstr "Pistas + CUE"
+
+#: app/resources/ui/preferences.blp:45
+msgid "Transliterate accents and other scripts"
+msgstr "Transliterar acentos y otras escrituras"
+
+#: app/resources/ui/preferences.blp:54
+msgid "Trash Originals After Split"
+msgstr "Enviar los originales a la papelera tras partir"
+
+#: app/src/sections/release_set.rs:60
+msgid "Treat the discs found in the same folder as one release"
+msgstr "Tratar los discos de la misma carpeta como una sola release"
+
+#: app/src/sections/release_set.rs:83
+msgid "Ungroup"
+msgstr "Desagrupar"
+
+#: app/src/sidebar.rs:448
+msgid "Ungroup Release Set"
+msgstr "Desagrupar conjunto"
+
+#: app/src/batch.rs:456
+msgid "Update in place: tag the files where they are"
+msgstr "Actualizar en su sitio: taguear los ficheros donde están"
+
+#: app/resources/ui/preferences.blp:204
+msgid "Use the personal access token from “Generate new token” on the developer page, not an application's Consumer Key or Consumer Secret (those are for OAuth apps)."
+msgstr "Usa el token de acceso personal de «Generate new token» en la página de desarrollador, no la Consumer Key ni el Consumer Secret de una aplicación (son para apps OAuth)."
+
+#: scripts/update-po.py
+msgid "Verifying…"
+msgstr "Verificando…"
+
+#: app/resources/ui/preferences.blp:64
+msgid "Watch the Rip Folder"
+msgstr "Vigilar la carpeta de rips"
+
+#: app/resources/ui/preferences.blp:93
+msgid "Watch the rip folder from the start of the session, without a window"
+msgstr "Vigilar la carpeta de rips desde el inicio de la sesión, sin ventana"
+
+#: app/src/inbox.rs:220
+msgid "Watch the rip folder in the background"
+msgstr "Vigilar la carpeta de rips en segundo plano"
+
+#: app/resources/ui/preferences.blp:111
+msgid "When the disc has one"
+msgstr "Cuando el disco lo tiene"
+
+#: app/src/batch.rs:681
+msgid "Working"
+msgstr "Trabajando"
+
+#: app/src/sidebar.rs:185
+msgid "Working…"
+msgstr "Trabajando…"
+
+#: crates/drtagger-core/src/batch.rs:902
+#, rust-format
+msgid "Would write {} field(s): {}"
+msgstr "Escribiría {} campo(s): {}"
+
+#: crates/drtagger-core/src/batch.rs:824
+#, rust-format
+msgid "Would {} the disc and tag it as {}"
+msgstr "Habría que {0} el disco y taguearlo como {1}"
+
+#: app/src/sections/tags.rs:122
+#: app/src/sections/workflow.rs:273
+msgid "Write the tags and the cover; originals are backed up and the audio is verified untouched"
+msgstr "Escribe los tags y la portada; se guarda copia de los originales y se verifica que el audio no cambia"
+
+#: crates/drtagger-core/src/batch.rs:560
+msgid "Writing tags"
+msgstr "Escribiendo tags"
+
+#: crates/drtagger-core/src/tagging.rs:518
+#: crates/drtagger-core/src/tagging.rs:611
+msgid "Writing tags…"
+msgstr "Escribiendo tags…"
+
+#: app/resources/ui/window.blp:144
+msgid "_About drtagger"
+msgstr "_Acerca de drtagger"
+
+#: app/resources/ui/window.blp:127
+msgid "_Clear Queue"
+msgstr "_Vaciar cola"
+
+#: app/resources/ui/window.blp:139
+msgid "_Keyboard Shortcuts"
+msgstr "_Atajos de teclado"
+
+#: app/resources/ui/window.blp:134
+msgid "_Preferences"
+msgstr "_Preferencias"
+
+#: app/resources/ui/window.blp:122
+msgid "_Process Queue…"
+msgstr "_Procesar la cola…"
+
+#: app/src/sections/identification.rs:137
+msgid "barcode"
+msgstr "código de barras"
+
+#: app/src/preferences.rs:403
+msgid "bundled"
+msgstr "incluido"
+
+#: app/src/sections/identification.rs:141
+msgid "catalog"
+msgstr "catálogo"
+
+#: app/src/sections/identification.rs:245
+msgid "confident"
+msgstr "segura"
+
+#: app/src/sections/identification.rs:159
+msgid "country"
+msgstr "país"
+
+#: app/src/sections/identification.rs:144
+msgid "disc ID"
+msgstr "ID de disco"
+
+#: app/resources/ui/window.blp:5
+msgid "drtagger"
+msgstr "drtagger"
+
+#: app/resources/ui/preferences.blp:65
+msgid "drtagger keeps running when its window is closed"
+msgstr "drtagger sigue funcionando al cerrar la ventana"
+
+#: app/resources/ui/preferences.blp:168
+msgid "drtagger ships without API keys. MusicBrainz, Cover Art Archive, iTunes Search and Deezer need none; the providers below require a key you create with your own account. Keys are stored in the system keyring."
+msgstr "drtagger no incluye claves API. MusicBrainz, Cover Art Archive, iTunes Search y Deezer no necesitan ninguna; los proveedores de abajo requieren una clave que creas con tu propia cuenta. Las claves se guardan en el llavero del sistema."
+
+#: app/src/sections/identification.rs:156
+msgid "edition"
+msgstr "edición"
+
+#: crates/drtagger-core/src/batch.rs:823
+#: scripts/update-po.py
+msgid "extract"
+msgstr "extraer"
+
+#: app/resources/ui/preferences.blp:235
+msgid "fanart.tv (High-Resolution Artwork)"
+msgstr "fanart.tv (carátulas en alta resolución)"
+
+#: app/resources/ui/preferences.blp:271
+msgid "ffmpeg"
+msgstr "ffmpeg"
+
+#: app/src/sections/tags.rs:146
+#, rust-format
+msgid "files move to {}/{}/{}"
+msgstr "los ficheros se mueven a {0}/{1}/{2}"
+
+#: app/src/sections/identification.rs:153
+msgid "fingerprints"
+msgstr "huellas"
+
+#: app/src/sections/identification.rs:272
+msgid "format unlikely for these files"
+msgstr "formato improbable para estos ficheros"
+
+#: app/src/sections/identification.rs:246
+msgid "likely"
+msgstr "probable"
+
+#: app/src/sections/tags.rs:140
+msgid "loudness is measured and ReplayGain / R128 tags are written"
+msgstr "se mide la sonoridad y se escriben tags ReplayGain / R128"
+
+#: app/src/sidebar.rs:63
+msgid "multichannel"
+msgstr "multicanal"
+
+#: app/src/sections/disc.rs:349
+msgid "multichannel area included"
+msgstr "área multicanal incluida"
+
+#: app/src/preferences.rs:413
+msgid "no DST decoder"
+msgstr "sin decodificador DST"
+
+#: app/src/preferences.rs:404
+msgid "override"
+msgstr "alternativo"
+
+#: app/src/sections/identification.rs:247
+msgid "possible"
+msgstr "posible"
+
+#: app/src/sections/identification.rs:163
+msgid "source"
+msgstr "origen"
+
+#: crates/drtagger-core/src/batch.rs:823
+#: scripts/update-po.py
+msgid "split"
+msgstr "partir"
+
+#: app/src/sections/disc.rs:351
+msgid "stereo area only"
+msgstr "solo área estéreo"
+
+#: app/src/preferences.rs:405
+msgid "system"
+msgstr "sistema"
+
+#: app/src/sections/identification.rs:248
+msgid "unlikely"
+msgstr "improbable"
+
+#: app/src/sections/disc.rs:308
+#, rust-format
+msgid "{} DSF tracks written and verified"
+msgstr "{} pistas DSF escritas y verificadas"
+
+#: app/src/state.rs:540
+#, rust-format
+msgid "{} added, {} updated, {} folders scanned"
+msgstr "{0} añadidos, {1} actualizados, {2} carpetas exploradas"
+
+#: app/src/inbox.rs:175
+#, rust-format
+msgid "{} album(s) could not be imported"
+msgstr "{} álbum(es) no se han podido importar"
+
+#: app/src/inbox.rs:169
+#, rust-format
+msgid "{} album(s) imported into the library"
+msgstr "{} álbum(es) importados a la biblioteca"
+
+#: app/src/batch.rs:500
+#, rust-format
+msgid "{} album(s) to process"
+msgstr "{} álbum(es) por procesar"
+
+#: app/src/inbox.rs:172
+#, rust-format
+msgid "{} album(s) to review"
+msgstr "{} álbum(es) por revisar"
+
+#: app/src/sidebar.rs:515
+#, rust-format
+msgid "{} albums"
+msgstr "{} álbumes"
+
+#: app/src/sections/identification.rs:60
+#, rust-format
+msgid "{} candidates, none certain"
+msgstr "{} candidatos, ninguno seguro"
+
+#: app/src/inspector.rs:233
+#, rust-format
+msgid "{} ch · {} · {} tracks · {}"
+msgstr "{0} can. · {1} · {2} pistas · {3}"
+
+#: app/src/sidebar.rs:56
+#, rust-format
+msgid "{} discs"
+msgstr "{} discos"
+
+#: app/src/sections/release_set.rs:46
+#, rust-format
+msgid "{} discs in this folder"
+msgstr "{} discos en esta carpeta"
+
+#: app/src/sections/release_set.rs:43
+#, rust-format
+msgid "{} discs, one release"
+msgstr "{} discos, una release"
+
+#: app/src/sections/tags.rs:87
+#, rust-format
+msgid "{} files"
+msgstr "{} ficheros"
+
+#: app/src/sections/tags.rs:52
+#, rust-format
+msgid "{} files written"
+msgstr "{} ficheros escritos"
+
+#: app/src/sections/disc.rs:395
+#, rust-format
+msgid "{} frames"
+msgstr "{} tramas"
+
+#: app/src/batch.rs:317
+#, rust-format
+msgid "{} h {} min"
+msgstr "{} h {} min"
+
+#: app/src/sections/identification.rs:232
+#, rust-format
+msgid "{} in other formats"
+msgstr "{} en otros formatos"
+
+#: app/src/state.rs:490
+#, rust-format
+msgid "{} is on a network volume that is not responding. Check the mount or use a local copy; the app keeps working."
+msgstr "{} está en un volumen de red que no responde. Comprueba el montaje o usa una copia local; la app sigue funcionando."
+
+#: app/src/batch.rs:319
+#, rust-format
+msgid "{} min"
+msgstr "{} min"
+
+#: app/src/sections/identification.rs:223
+#, rust-format
+msgid "{} more candidates not shown"
+msgstr "{} candidatos más sin mostrar"
+
+#: app/src/batch.rs:984
+#, rust-format
+msgid "{} of {}"
+msgstr "{0} de {1}"
+
+#: app/src/sections/release_set.rs:39
+#, rust-format
+msgid "{} of {} discs in the queue"
+msgstr "{0} de {1} discos en la cola"
+
+#: app/src/sections/tags.rs:70
+#, rust-format
+msgid "{} of {} tracks change, {} fields"
+msgstr "Cambian {0} de {1} pistas, {2} campos"
+
+#: app/src/sections/disc.rs:132
+#, rust-format
+msgid "{} of {} tracks match; the others differ (offset or damage)"
+msgstr "{0} de {1} pistas coinciden; el resto difiere (offset o daños)"
+
+#: app/src/sections/tags.rs:334
+#, rust-format
+msgid "{} picture(s)"
+msgstr "{} imagen(es)"
+
+#: app/src/sections/disc.rs:152
+#, rust-format
+msgid "{} rips known, confidence {}"
+msgstr "{0} rips conocidos, confianza {1}"
+
+#: app/src/sections/identification.rs:166
+#, rust-format
+msgid "{} scans read"
+msgstr "{} escaneos leídos"
+
+#: app/src/sidebar.rs:53
+#: app/src/sections/disc.rs:116
+#: app/src/sections/identification.rs:266
+#, rust-format
+msgid "{} tracks"
+msgstr "{} pistas"
+
+#: app/src/sections/disc.rs:225
+#, rust-format
+msgid "{} tracks on {} discs written and verified"
+msgstr "{0} pistas en {1} discos escritas y verificadas"
+
+#: app/src/sections/disc.rs:227
+#, rust-format
+msgid "{} tracks written and verified"
+msgstr "{} pistas escritas y verificadas"
+
+#: app/src/image_viewer.rs:73
+#, rust-format
+msgid "{} × {} px"
+msgstr "{0} × {1} px"
+
+#: crates/drtagger-core/src/tagging.rs:499
+#, rust-format
+msgid "{}: could not be downloaded."
+msgstr "{}: no se ha podido descargar."
+

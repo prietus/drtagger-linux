@@ -1,0 +1,91 @@
+/* App-wide styles; loaded automatically from the resource base path. */
+
+.group-card {
+  padding: 12px;
+}
+
+.thumbnail-frame {
+  border-radius: 6px;
+  border: none;
+}
+
+.thumbnail-button {
+  padding: 0;
+}
+
+.cover-placeholder {
+  background-color: alpha(currentColor, 0.08);
+  border-radius: 8px;
+}
+
+.disc-badge {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background-color: alpha(currentColor, 0.12);
+}
+
+.subtitle-tertiary {
+  opacity: 0.7;
+}
+
+.queue-status {
+  padding: 6px 12px;
+  border-top: 1px solid alpha(currentColor, 0.12);
+}
+
+image.success, label.success { color: var(--success-color, @success_color); }
+image.warning, label.warning { color: var(--warning-color, @warning_color); }
+image.error, label.error { color: var(--error-color, @error_color); }
+image.accent, label.accent { color: var(--accent-color, @accent_color); }
+
+.workflow-card {
+  padding: 14px;
+}
+
+.candidate-row {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.selected-candidate {
+  background-color: alpha(var(--accent-bg-color, @accent_bg_color), 0.15);
+}
+
+.confidence-badge {
+  padding: 0 5px;
+  border-radius: 999px;
+  background-color: alpha(currentColor, 0.15);
+}
+
+.remote-thumbnail {
+  background-color: alpha(currentColor, 0.08);
+  border-radius: 4px;
+}
+
+.photo-badge {
+  padding: 2px 5px;
+  border-radius: 999px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.photo-badge.obi {
+  background-color: var(--orange-3, #ff7800);
+}
+
+label.strikethrough {
+  text-decoration-line: line-through;
+}
+
+.batch-banner {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.batch-banner.review {
+  background-color: alpha(var(--warning-color, @warning_color), 0.1);
+}
+
+.batch-banner.failed {
+  background-color: alpha(var(--error-color, @error_color), 0.1);
+}

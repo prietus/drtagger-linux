@@ -1,0 +1,11 @@
+[package]
+name = "dstkit"
+description = "DST (ISO/IEC 14496-3 subpart 10) decoder emitting the DSD bitstream (port of DSTKit, from FFmpeg's dstdec.c)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license = "LGPL-2.1-or-later"
+publish = false
+
+[dependencies]

@@ -1,0 +1,25 @@
+[package]
+name = "tagkit"
+description = "Picard tag schema, mapping, merge policy, backups, artwork and library organiser (port of TagKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+flackit.workspace = true
+sha2.workspace = true
+hex.workspace = true
+imagesize.workspace = true
+serde.workspace = true
+librarykit.workspace = true
+splitkit.workspace = true
+base64.workspace = true
+providerkit.workspace = true
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "gif", "bmp", "tiff", "webp"] }
+
+[dev-dependencies]
+tempfile.workspace = true
+serde_json.workspace = true

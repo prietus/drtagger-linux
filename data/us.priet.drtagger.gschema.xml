@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mirrors the Mac app's AppSettings (same meaning and defaults). API keys
+     are not settings: they live in the keyring (drtagger-core::keys). -->
+<schemalist gettext-domain="drtagger">
+  <enum id="us.priet.drtagger.SacdPausePolicy">
+    <value nick="append-to-previous" value="0"/>
+    <value nick="drop" value="1"/>
+  </enum>
+
+  <schema id="us.priet.drtagger" path="/us/priet/drtagger/">
+    <!-- Window state -->
+    <key name="window-width" type="i"><default>1100</default></key>
+    <key name="window-height" type="i"><default>720</default></key>
+    <key name="window-maximized" type="b"><default>false</default></key>
+    <key name="inspector-show-details" type="b">
+      <default>false</default>
+      <summary>Show the source, disc and track details in the inspector</summary>
+    </key>
+
+    <!-- Library -->
+    <key name="library-root" type="s">
+      <default>''</default>
+      <summary>Destination library folder; empty means not configured</summary>
+    </key>
+    <key name="album-folder-template" type="s">
+      <default>'{albumartist}/{album} ({year})'</default>
+    </key>
+    <key name="track-file-template" type="s">
+      <default>'{track} {title}'</default>
+    </key>
+    <key name="ascii-file-names" type="b"><default>true</default></key>
+    <key name="organize-after-apply" type="b"><default>true</default></key>
+    <key name="move-originals-to-trash" type="b">
+      <default>false</default>
+      <summary>Move original images to the Trash after a verified split</summary>
+    </key>
+
+    <!-- Queue -->
+    <key name="keep-queue-between-launches" type="b"><default>false</default></key>
+
+    <!-- SACD -->
+    <key name="extract-multichannel" type="b"><default>false</default></key>
+    <key name="sacd-pause-policy" enum="us.priet.drtagger.SacdPausePolicy">
+      <default>'append-to-previous'</default>
+    </key>
+
+    <!-- Artwork and tags -->
+    <key name="embed-front-cover" type="b"><default>true</default></key>
+    <key name="embed-cover-max-pixels" type="i">
+      <range min="300" max="5000"/>
+      <default>1500</default>
+    </key>
+    <key name="save-cover-file" type="b"><default>true</default></key>
+    <key name="genres-from-discogs" type="b"><default>true</default></key>
+    <key name="compute-replaygain" type="b"><default>true</default></key>
+
+    <!-- Advanced -->
+    <key name="ffmpeg-override-path" type="s">
+      <default>''</default>
+      <summary>ffmpeg used instead of the bundled one; empty uses the bundled one</summary>
+    </key>
+    <key name="cddb-server-enabled" type="b"><default>false</default></key>
+    <key name="cddb-port" type="i">
+      <range min="1024" max="65535"/>
+      <default>8880</default>
+    </key>
+
+    <!-- Batch -->
+    <key name="batch-dry-run" type="b"><default>false</default></key>
+    <key name="batch-mode" type="s"><default>'importToLibrary'</default></key>
+
+    <!-- Rip inbox -->
+    <key name="inbox-enabled" type="b">
+      <default>false</default>
+      <summary>Watch the rip folder and import finished rips</summary>
+    </key>
+    <key name="inbox-folder" type="s">
+      <default>''</default>
+      <summary>Local folder the rippers write into</summary>
+    </key>
+    <key name="inbox-quiet-minutes" type="i">
+      <range min="1" max="240"/>
+      <default>10</default>
+      <summary>Minutes a rip without a log must stay unchanged</summary>
+    </key>
+    <key name="start-at-login" type="b">
+      <default>false</default>
+      <summary>Start in the background when the session starts</summary>
+    </key>
+  </schema>
+</schemalist>

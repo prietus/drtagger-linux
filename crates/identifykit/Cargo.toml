@@ -1,0 +1,26 @@
+[package]
+name = "identifykit"
+description = "Identification signals, candidate pooling and scoring, cover art and CDDB responder (port of IdentifyKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+librarykit = { workspace = true }
+splitkit = { workspace = true }
+sacdkit = { workspace = true }
+providerkit = { workspace = true }
+chromaprintkit = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+regex = { workspace = true }
+unicode-normalization = { workspace = true }
+unicode-properties = { workspace = true }
+unicode-segmentation = { workspace = true }
+imagesize = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

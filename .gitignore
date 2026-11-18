@@ -1,0 +1,21 @@
+/target/
+/.build/
+
+# ffmpeg binaries are reproducible with scripts/build-ffmpeg.sh; keep only
+# BUILD-INFO.txt and the licence texts in git.
+/Vendor/ffmpeg/ffmpeg
+/Vendor/ffmpeg/ffprobe
+.flatpak-builder/
+flatpak-build/
+*.swp
+.DS_Store
+*.log
+
+# Parity harness: Swift build output and dumps of the private library
+/parity/MacDump/.build/
+/parity/MacDump/.build-patched/
+/parity/local/
+__pycache__/
+
+# ONNX models: scripts/fetch-models.sh
+/models/

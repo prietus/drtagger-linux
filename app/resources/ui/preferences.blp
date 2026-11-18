@@ -1,0 +1,324 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $DrtaggerPreferencesDialog: Adw.PreferencesDialog {
+  search-enabled: true;
+
+  Adw.PreferencesPage {
+    title: _("General");
+    icon-name: "preferences-system-symbolic";
+
+    Adw.PreferencesGroup {
+      title: _("Library");
+
+      Adw.ActionRow library_root_row {
+        title: _("Destination Folder");
+        subtitle: _("Not set");
+        activatable-widget: choose_root_button;
+
+        [suffix]
+        Button choose_root_button {
+          label: _("Choose…");
+          valign: center;
+        }
+      }
+
+      Adw.EntryRow album_template_row {
+        title: _("Album Folder");
+      }
+
+      Adw.EntryRow track_template_row {
+        title: _("Track File");
+      }
+
+      Adw.ActionRow template_preview_row {
+        title: _("Preview");
+        subtitle-selectable: true;
+
+        styles [
+          "property",
+        ]
+      }
+
+      Adw.SwitchRow ascii_row {
+        title: _("ASCII-Only File Names");
+        subtitle: _("Transliterate accents and other scripts");
+      }
+
+      Adw.SwitchRow organize_row {
+        title: _("Organize After Apply");
+        subtitle: _("Move files into the library layout using the final tags");
+      }
+
+      Adw.SwitchRow trash_row {
+        title: _("Trash Originals After Split");
+        subtitle: _("Only after the split has been verified");
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("Rip Inbox");
+      description: _("Finished rips in this local folder are identified, tagged and moved into the library without asking; unsure ones wait in the queue for review.");
+
+      Adw.SwitchRow inbox_row {
+        title: _("Watch the Rip Folder");
+        subtitle: _("drtagger keeps running when its window is closed");
+      }
+
+      Adw.ActionRow inbox_folder_row {
+        title: _("Rip Folder");
+        subtitle: _("Not set");
+        activatable-widget: choose_inbox_button;
+
+        [suffix]
+        Button choose_inbox_button {
+          label: _("Choose…");
+          valign: center;
+        }
+      }
+
+      Adw.SpinRow inbox_quiet_row {
+        title: _("Quiet Time (Minutes)");
+        subtitle: _("How long a rip without a ripper log must stay unchanged");
+
+        adjustment: Adjustment {
+          lower: 1;
+          upper: 240;
+          step-increment: 1;
+        };
+      }
+
+      Adw.SwitchRow login_row {
+        title: _("Start at Login");
+        subtitle: _("Watch the rip folder from the start of the session, without a window");
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("Queue");
+
+      Adw.SwitchRow keep_queue_row {
+        title: _("Remember the Queue");
+        subtitle: _("Keep albums and their identification results between launches");
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("SACD");
+
+      Adw.SwitchRow multichannel_row {
+        title: _("Extract Multichannel Area");
+        subtitle: _("When the disc has one");
+      }
+
+      Adw.ComboRow pause_policy_row {
+        title: _("Audio Between Tracks");
+
+        model: StringList {
+          strings [
+            _("Keep in Previous Track"),
+            _("Drop (Like sacd_extract)"),
+          ]
+        };
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("Artwork and Tags");
+      description: _("The front cover is embedded resized to this longest side. An existing cover file in the folder is never replaced. Fields taken from the chosen release replace the existing ones; everything else in the files is preserved, and fields can be locked in the preview.");
+
+      Adw.SwitchRow embed_cover_row {
+        title: _("Embed Front Cover");
+      }
+
+      Adw.ComboRow cover_size_row {
+        title: _("Embedded Cover Size");
+
+        model: StringList {
+          strings [
+            "1000 px",
+            "1500 px",
+            "2000 px",
+            "3000 px",
+          ]
+        };
+      }
+
+      Adw.SwitchRow cover_file_row {
+        title: _("Save cover.jpg");
+        subtitle: _("Full resolution, next to the tracks");
+      }
+
+      Adw.SwitchRow genres_row {
+        title: _("Genres From Discogs");
+      }
+
+      Adw.SwitchRow replaygain_row {
+        title: _("ReplayGain on Apply");
+        subtitle: _("Measure EBU R128 loudness when the files have none");
+      }
+    }
+  }
+
+  Adw.PreferencesPage {
+    title: _("Providers");
+    icon-name: "network-server-symbolic";
+
+    Adw.PreferencesGroup {
+      description: _("drtagger ships without API keys. MusicBrainz, Cover Art Archive, iTunes Search and Deezer need none; the providers below require a key you create with your own account. Keys are stored in the system keyring.");
+    }
+
+    Adw.PreferencesGroup {
+      title: _("AcoustID (Acoustic Fingerprints)");
+
+      Adw.PasswordEntryRow acoustid_row {
+        title: _("Application API Key");
+        show-apply-button: true;
+      }
+
+      Adw.ActionRow acoustid_test_row {
+        title: _("Test");
+
+        [suffix]
+        Button acoustid_test {
+          label: _("Test");
+          valign: center;
+        }
+      }
+
+      Adw.ActionRow {
+        title: _("Register an application at acoustid.org");
+        activatable-widget: acoustid_link;
+
+        [suffix]
+        LinkButton acoustid_link {
+          icon-name: "adw-external-link-symbolic";
+          uri: "https://acoustid.org/new-application";
+          valign: center;
+        }
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("Discogs (Credits, Editions, Catalog Numbers)");
+      description: _("Use the personal access token from “Generate new token” on the developer page, not an application's Consumer Key or Consumer Secret (those are for OAuth apps).");
+
+      Adw.PasswordEntryRow discogs_row {
+        title: _("Personal Access Token");
+        show-apply-button: true;
+      }
+
+      Adw.ActionRow discogs_test_row {
+        title: _("Test");
+
+        [suffix]
+        Button discogs_test {
+          label: _("Test");
+          valign: center;
+        }
+      }
+
+      Adw.ActionRow {
+        title: _("Open your Discogs developer settings");
+        activatable-widget: discogs_link;
+
+        [suffix]
+        LinkButton discogs_link {
+          icon-name: "adw-external-link-symbolic";
+          uri: "https://www.discogs.com/settings/developers";
+          valign: center;
+        }
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("fanart.tv (High-Resolution Artwork)");
+
+      Adw.PasswordEntryRow fanart_row {
+        title: _("Project API Key");
+        show-apply-button: true;
+      }
+
+      Adw.ActionRow fanart_test_row {
+        title: _("Test");
+
+        [suffix]
+        Button fanart_test {
+          label: _("Test");
+          valign: center;
+        }
+      }
+
+      Adw.ActionRow {
+        title: _("Request an API key at fanart.tv");
+        activatable-widget: fanart_link;
+
+        [suffix]
+        LinkButton fanart_link {
+          icon-name: "adw-external-link-symbolic";
+          uri: "https://fanart.tv/get-an-api-key/";
+          valign: center;
+        }
+      }
+    }
+  }
+
+  Adw.PreferencesPage {
+    title: _("Advanced");
+    icon-name: "applications-engineering-symbolic";
+
+    Adw.PreferencesGroup {
+      title: _("ffmpeg");
+      description: _("The bundled ffmpeg is a minimal LGPL build. A distribution's ffmpeg works for development but is often GPL and must not be redistributed with the app.");
+
+      Adw.ActionRow ffmpeg_status_row {
+        title: _("Status");
+        subtitle-selectable: true;
+
+        [suffix]
+        Button ffmpeg_check {
+          label: _("Check");
+          valign: center;
+        }
+      }
+
+      Adw.EntryRow ffmpeg_row {
+        title: _("Override Path (Empty Uses the Bundled One)");
+
+        [suffix]
+        Button ffmpeg_choose {
+          icon-name: "document-open-symbolic";
+          tooltip-text: _("Choose an ffmpeg executable");
+          valign: center;
+
+          styles [
+            "flat",
+          ]
+        }
+      }
+    }
+
+    Adw.PreferencesGroup cddb_group {
+      title: _("CDDB Server for Rippers");
+
+      Adw.SwitchRow cddb_row {
+        title: _("Enable CDDB Server");
+      }
+
+      Adw.SpinRow cddb_port_row {
+        title: _("Port");
+
+        adjustment: Adjustment {
+          lower: 1024;
+          upper: 65535;
+          step-increment: 1;
+          page-increment: 10;
+        };
+      }
+
+      Adw.ActionRow cddb_status_row {
+        title: _("Status");
+      }
+    }
+  }
+}

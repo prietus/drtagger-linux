@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>us.priet.drtagger</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT AND LGPL-2.1-or-later</project_license>
+  <name>drtagger</name>
+  <summary>Identify, split and tag audiophile rips</summary>
+  <description>
+    <p>
+      drtagger takes rips as they circulate — SACD ISOs, CD images with a CUE
+      sheet and folders of lossless tracks — splits images into verified
+      per-track files, identifies the exact release from barcodes, catalog
+      numbers, disc IDs and acoustic fingerprints, and writes MusicBrainz
+      (Picard-style) tags that players read consistently.
+    </p>
+    <ul>
+      <li>SACD ISOs extracted to DSF, DST decoded; CD images split to FLAC and checked against CUETools DB</li>
+      <li>The exact edition found from the rip itself: tags, disc IDs, barcodes and catalog numbers read from the scans, fingerprints, cover comparison</li>
+      <li>Tags previewed field by field with locks, ReplayGain 2.0, cover art, originals backed up and restorable</li>
+      <li>The whole queue processed unattended; unsure albums set aside for review, releases already in the library flagged</li>
+      <li>A rip folder watched in the background: finished rips are tagged and moved into the library with verified copies</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">us.priet.drtagger.desktop</launchable>
+  <developer id="us.priet">
+    <name>Carlos Prieto Ortiz</name>
+  </developer>
+  <url type="homepage">https://github.com/prietus/drtagger-linux</url>
+  <url type="bugtracker">https://github.com/prietus/drtagger-linux/issues</url>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#d9c9a3</color>
+    <color type="primary" scheme_preference="dark">#3d3426</color>
+  </branding>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <releases>
+    <release version="0.1.0" date="2026-11-18">
+      <description><p>First version: the Mac app's features on GNOME, plus the rip inbox.</p></description>
+    </release>
+  </releases>
+</component>

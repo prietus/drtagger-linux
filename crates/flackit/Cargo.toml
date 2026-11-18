@@ -1,0 +1,14 @@
+[package]
+name = "flackit"
+description = "FLAC, DSF and ID3v2 parsing with byte-exact FLAC rewrites (port of FLACKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+
+[dev-dependencies]
+sha2.workspace = true

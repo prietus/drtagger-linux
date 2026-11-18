@@ -1,0 +1,16 @@
+[package]
+name = "chromaprintkit"
+description = "Chromaprint fingerprints from the vendored Chromaprint 1.5.1 (port of ChromaprintKit)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+# The crate's Rust code is MIT; the vendored Chromaprint is LGPL 2.1+.
+license = "MIT AND LGPL-2.1-or-later AND BSD-3-Clause"
+publish = false
+links = "chromaprint"
+
+[dependencies]
+
+[build-dependencies]
+cc = "1"
